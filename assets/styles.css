@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+    box-sizing: content-box;
+    scroll-padding-top: 100px;
+}
+
+body {
+    background-color: grey;
+    color: seashell;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    padding: 30px 25px;
+    background-color:seashell;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-weight: lighter;
+    font-size: 50px;
+    color: black;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 5;
+    display: inline-block;
+}
+
+header nav {
+    margin: 30px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: black;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: normal;
+    font-size: 1.55vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section h2 {
+    font-size: 2.25vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    padding: 20px 100px 10px 100px
+}
+
+about-me p {
+    line-height: 1.25;
+    width: 80%;
+    font-size: 2vw;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+}
+
+/* CSS code template from w3schools.com */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: grey;
+    padding: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
